@@ -5,8 +5,10 @@ workflows:
   use-my-orb:
     jobs:
       - cypress/run:
+          name: Running tests under chrome
           cypress-command: npx cypress run --browser chrome
           install-browsers: true
       - cypress/run:
+          name: Running tests under firefox
           cypress-command: npx cypress run --browser firefox
           install-browsers: true
