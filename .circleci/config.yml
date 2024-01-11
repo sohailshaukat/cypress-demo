@@ -15,4 +15,8 @@ workflows:
           start-command: npm run start
           cypress-command: npx cypress run --browser firefox --record --key $CYPRESS_RECORD_KEY
           install-browsers: true
-          
+      - cypress/run:
+          name: Running tests for iPhone X
+          start-command: npm run start
+          cypress-command: npx cypress run --record --key $CYPRESS_RECORD_KEY --config viewportWidth=375,viewportHeight=812          
+     
