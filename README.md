@@ -18,7 +18,7 @@ How to run tests:
 
 
 #### Clean code practices
-Page object classes MUST have PascalCase
-All variables, methods, functions MUST be camelCase
-All Global Variables and DB methods MUST be UPPERCASE (WITH SNAKE_CASE)
-All cypress aliases MUST be snake_case
+* Page object classes MUST have PascalCase
+* All variables, methods, functions MUST be camelCase
+* All Global Variables and DB methods MUST be UPPERCASE (WITH SNAKE_CASE)
+* All cypress aliases MUST be snake_case
