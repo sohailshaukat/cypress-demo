@@ -13,4 +13,8 @@ module.exports = defineConfig({
   },
   watchForFileChanges: false,
   projectId: 'rimkz6',
+  retries: {
+    runMode: 3,
+    openMode: 2,
+  },
 });
