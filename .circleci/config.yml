@@ -2,17 +2,17 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@3
 workflows:
-  build:
+  use-my-orb:
     jobs:
       - cypress/run:
-          record: true
           name: Running tests under chrome
-          cypress-command: npx cypress run --browser chrome
+          start-command: npm run start
+          cypress-command: npx cypress run --browser chrome --record
           install-browsers: true
       - cypress/run:
-          record: true
           name: Running tests under firefox
-          cypress-command: npx cypress run --browser firefox
+          start-command: npm run start
+          cypress-command: npx cypress run --browser firefox --record
           install-browsers: true
 
 
