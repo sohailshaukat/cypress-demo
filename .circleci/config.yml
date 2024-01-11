@@ -1,13 +1,10 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@3
-  slack: circleci/slack@4.4.4
 
 workflows:
   PLOTLY-TESTS:
-    jobs:
-      - slack/on-hold
-      
+    jobs:      
       - cypress/run:
           name: Running tests under chrome
           start-command: npm run start
