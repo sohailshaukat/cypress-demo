@@ -13,8 +13,8 @@ describe('Tests for Cypress.io Dashboard', () => {
     LandingPage.verifyWeeklyDownloads();
   });
 
-  it.skip('User is able to click on Company and then on “About Cypress”', () => {
-    
+  it('User is able to click on Company and then on “About Cypress”', () => {
+
   });
 
   it.skip('User is able to click “Install” and then on “npm install cypress” and make sure the copied text is “npm install cypress —save-dev”', () => {});
