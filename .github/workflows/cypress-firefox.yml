@@ -1,4 +1,4 @@
-name: Cypress Tests for Firefox
+name: Plotly Tests for Firefox
 on: [push]
 jobs:
   cypress-run:
