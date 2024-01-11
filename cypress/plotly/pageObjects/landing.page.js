@@ -1,15 +1,14 @@
 class LandingPage {
   constructor() {
-    this.copyDeck = {
+    this.content = {
       ossTagLine: 'Loved by OSS, trusted by Enterprise',
       title: 'Test. Automate. Accelerate.',
     };
   }
 
   /**
-   * Verify title on Cypress.io landing page (Visibility Check)
+   * Verify title on Cypress.io landing page
    * @param {string} [status='be.visible']  - Chainer
-   * @returns {void}
    * @example
    * // For positive test
    * LandingPage.verifyPageTitle('be.visible');
@@ -20,23 +19,21 @@ class LandingPage {
    * @see — https://on.cypress.io/should
    * */
   verifyPageTitle(status = 'be.visible') {
-    cy.contains(this.copyDeck.title).should(status);
+    cy.contains('h1', this.content.title).should(status);
   }
 
   /**
    * Scroll to the title on Cypress.io landing page.
    * @param {string} [status='be.visible']  - Chainer
-   * @returns {void}
    * @see {@link verifyPageTitle} for usage examples.
    * */
   verifyOSSTagLine(status = 'be.visible') {
-    cy.contains(this.copyDeck.ossTagLine).scrollIntoView().should(status);
+    cy.contains(this.content.ossTagLine).scrollIntoView().should(status);
   }
 
   /**
-   * @summary Verifies the 'Weekly Downloads' component is visible.
+   * Verifies the 'Weekly Downloads' component is visible.
    * @param {string} [status='be.visible']  - Chainer
-   * @returns {void}
    * @see {@link verifyPageTitle} for usage examples.
    * */
   verifyWeeklyDownloads(status = 'be.visible') {

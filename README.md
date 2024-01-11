@@ -36,7 +36,10 @@
 * Writing tests
   * Every test must be self contained, meaning it can be run on its own (excluding setups / teardowns). Test should NEVER rely on data or steps from another test.
   * Test must pass 90% of the time in order to be commited; that is if the test is run 10 times in a row it must pass at least 9 times.
+  * Only skip test-cases when a bug is reported and remediation is in process. If a test is no longer valid, it should be decomissioned.
   * Any additional dependencies to the project must be vetted by the automation team before being committed.
+ * Use Page Object Model
+ * Use Data Driven model for environment specific data.
 
 * Code review
   * Your first code review should be done via a meeting with someone from the Automation team, this is to make it much less likely that you will need to perform multiple commits to fix any issues
@@ -49,11 +52,13 @@
   * All variables, methods, functions MUST be camelCase
   * All Global Variables and DB methods MUST be UPPERCASE (WITH SNAKE_CASE)
   * All cypress aliases MUST be snake_case
+  * For consistency it is recommended to follow filename1.page.js for page object files. Similarly filename2.spec.js for test spec files.
 
 
 ## Bonus Section
+- Bonus testcase with bug breakdown. And post remediation testcase.
 - Github Actions Integration
-  - Runs test on Firefox, Chrome, Electron (default browser)
+  - Runs test on Firefox, Chrome, Electron (default browser).
   - Secrets/Credentials Check
   - Dependency Check
 - CircleCI Inregration
