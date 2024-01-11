@@ -1,11 +1,17 @@
 {
   "author": "Sohail Shaukat",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:record": "cypress run --record --key b2df85c3-2e40-40ee-9f20-d7e77748c576",
-    "cypress:chrome" : "npx cypress run --browser chrome",
-    "cypress:firefox" : "npx cypress run --browser firefox"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:record": "cypress run --record --key b2df85c3-2e40-40ee-9f20-d7e77748c576",
+    "cy:chrome" : "npx cypress run --browser chrome",
+    "cy:firefox" : "npx cypress run --browser firefox",
+    "cy:chrome:record" : "npx cypress run --browser chrome --record --key b2df85c3-2e40-40ee-9f20-d7e77748c576",
+    "cy:firefox:record" : "npx cypress run --browser firefox --record --key b2df85c3-2e40-40ee-9f20-d7e77748c576",
+    "cy:chrome:headed" : "npx cypress run --browser chrome --headed",
+    "cy:firefox:headed" : "npx cypress run --browser firefox --headed",
+    "cy:chrome:headed:record" : "npx cypress run --browser chrome --record --key b2df85c3-2e40-40ee-9f20-d7e77748c576 --headed",
+    "cy:firefox:headed:record" : "npx cypress run --browser firefox --record --key b2df85c3-2e40-40ee-9f20-d7e77748c576 --headed"
   },
   "dependencies": {
     "cypress": "^13.6.2"
