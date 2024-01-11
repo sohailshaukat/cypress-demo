@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@3
 workflows:
-  use-my-orb:
+  build:
     jobs:
       - cypress/run:
           record: true
@@ -14,3 +14,14 @@ workflows:
           name: Running tests under firefox
           cypress-command: npx cypress run --browser firefox
           install-browsers: true
+
+
+
+# version: 2.1
+# orbs:
+#   cypress: cypress-io/cypress@1
+# workflows:
+#   build:
+#     jobs:
+#       - cypress/run:
+#           record: true
