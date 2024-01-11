@@ -1,9 +1,12 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@3
+  slack: circleci/slack@4.4.4
+
 workflows:
   use-my-orb:
     jobs:
+      - slack/on-hold
       - cypress/run:
           name: Running tests under chrome
           start-command: npm run start
@@ -14,14 +17,3 @@ workflows:
           start-command: npm run start
           cypress-command: npx cypress run --browser firefox --record
           install-browsers: true
-
-
-
-# version: 2.1
-# orbs:
-#   cypress: cypress-io/cypress@1
-# workflows:
-#   build:
-#     jobs:
-#       - cypress/run:
-#           record: true
