@@ -28,9 +28,11 @@
         * With Cypress Dashboard ()
           * add `:record` to the above scripts. For e.g.,
             *`npm run cy:chrome:headed:record`
+    * Note: For executions with Cypress Dashboard Record enabled, export the CYPRESS_RECORD_KEY as environment variable instead of passing it in package.json.
+      - For Linux Systems: `export CYPRESS_RECORD_KEY=<KEY>`
+
 
 ### Contribution guidelines ###
-
 * Writing tests
   * Every test must be self contained, meaning it can be run on its own (excluding setups / teardowns). Test should NEVER rely on data or steps from another test.
   * Test must pass 90% of the time in order to be commited; that is if the test is run 10 times in a row it must pass at least 9 times.
@@ -50,12 +52,16 @@
 
 
 ## Bonus Section
+- Github Actions Integration
+  - Runs test on Firefox, Chrome, Electron (default browser)
+  - Secrets/Credentials Check
+  - Dependency Check
 - CircleCI Inregration
+  - Runs test on Firefox, Chrome, iPhoneX.
 - Cypress Dashboard Integration
+  - Gets results from CircleCI, GitHub Actions and Local (when `--record` or `:record` is provided)
 - Slack Integration
-- Secrets/Credentials Check
-- Dependency Check
-
-### Linter / Code Formatter
-- ESLint - Linter
-- Prettier - Code Formatter
+  - Notifies of execution results that are sent to Cypress Dashboard (all mentioned in above point).
+- Linter / Code Formatter
+  - ESLint - Linter
+  - Prettier - Code Formatter
