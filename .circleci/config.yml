@@ -4,16 +4,18 @@ orbs:
   slack: circleci/slack@4.4.4
 
 workflows:
-  use-my-orb:
+  PLOTLY-TESTS:
     jobs:
       - slack/on-hold
+      
       - cypress/run:
           name: Running tests under chrome
           start-command: npm run start
-          cypress-command: npx cypress run --browser chrome --record
+          cypress-command: npx cypress run --browser chrome --record --key $CYPRESS_RECORD_KEY
           install-browsers: true
       - cypress/run:
           name: Running tests under firefox
           start-command: npm run start
-          cypress-command: npx cypress run --browser firefox --record
+          cypress-command: npx cypress run --browser firefox --record --key $CYPRESS_RECORD_KEY
           install-browsers: true
+          
