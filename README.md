@@ -125,4 +125,4 @@ $ npm run cy:chrome
 
 
 ### List of known issues
-* `cy.visit()` - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See [Github issue](https://github.com/cypress-io/cypress/issues/2938).
+* `cy.visit()` - Intermittently fails in current stage for Firefox, hence firefox execution is restricted to default.spec.js on local. See [Github issue](https://github.com/cypress-io/cypress/issues/2938).
