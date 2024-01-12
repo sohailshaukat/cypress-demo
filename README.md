@@ -68,20 +68,23 @@
 
 ## Bonus Section
 - Bonus testcase with bug breakdown. And post remediation testcase.
+- Linter / Code Formatter
+  - ESLint - Linter
+  - Prettier - Code Formatter
 - Github Actions Integration
   - Runs test on Firefox, Chrome, Electron (default browser).
-  - Secrets/Credentials Check
-  - Dependency Check
+  - Git Secrets/Credentials Check
+  - OWASP Dependency Check
 - CircleCI Inregration
   - Runs test on Firefox, Chrome, iPhoneX.
 - Cypress Dashboard Integration
   - Gets results from CircleCI, GitHub Actions and Local (when `--record` or `:record` is provided)
 - Slack Integration
   - Notifies of execution results that are sent to Cypress Dashboard (all mentioned in above point).
-- Linter / Code Formatter
-  - ESLint - Linter
-  - Prettier - Code Formatter
+  - The goal is to have 6 zeroes lined up, as we have total of 6 CI/CD runners.
+    - ![Alt text](slack.png)
+
 
 
 #### List of known issues
-* cy.visit() - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local.
+* cy.visit() - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See Github [issue](https://github.com/cypress-io/cypress/issues/2938).
