@@ -6,7 +6,7 @@
     - Mobile
       - iPhoneX (viewport) : No known issues ✅
   - Gecko Family
-    - Firefox : 1 Known issue ❌ (See below).
+    - Firefox : 1 Known issue ❌ (See [below](#List of known issues) ).
 
 
 ### How do I get set up? ###
@@ -41,6 +41,31 @@
       - For Linux Systems: `export CYPRESS_RECORD_KEY=<KEY>`
     * To run specific suites/spec files: `npm run cy:spec:$specFileName` 
       - For E.g. To execute tests from 'cypress/plotly/tests/*product*.spec.js' use `npm run cy:spec:product`
+
+### How to run tests in docker
+* Assuming you have docker installed
+  * One liner
+    ```bash
+    $ docker run -it -v $PWD:/e2e -w /e2e cypress/included:latest
+    ```
+  * OR (For linux), run the cy-run.sh file provided. Assuming you're in root dir.
+    ```bash
+    $ ls
+    cypress            cy-run.sh     package.json       README.md
+    cypress.config.js  node_modules  package-lock.json  slack.png
+
+    $ chmod +x ./cy-run.sh
+    $ ./cy-run.sh
+    ```
+  * For containerizaed execution with `--record` as `true`, either run
+    ```bash
+    $ docker run -it -v $PWD:/e2e -w /e2e -e CYPRESS_RECORD_KEY cypress/included:latest --record
+    ```
+    OR
+    ```
+    $ chmod +x ./cy-run-record.sh
+    $ ./cy-run-record.sh
+    ```
 
 ## Contribution guidelines 
 * Writing tests
