@@ -88,6 +88,7 @@ $ npm run cy:chrome
   * Any additional dependencies to the project must be vetted by the automation team before being committed.
  * Use Page Object Model
  * Use Data Driven model for environment specific data.
+ * Use JSDoc comments for documentation, IDE Intellisense and type specification of methods.
 
 * Code review
   * Your first code review should be done via a meeting with someone from the Automation team, this is to make it much less likely that you will need to perform multiple commits to fix any issues
