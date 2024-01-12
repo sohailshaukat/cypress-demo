@@ -42,13 +42,13 @@
     * To run specific suites/spec files: `npm run cy:spec:$specFileName` 
       - For E.g. To execute tests from 'cypress/plotly/tests/*product*.spec.js' use `npm run cy:spec:product`
 
-### How to run tests in docker
+### How to run tests in docker (FOR LINUX)
 * Assuming you have docker installed
   * One liner
     ```bash
     $ docker run -it -v $PWD:/e2e -w /e2e cypress/included:latest
     ```
-  * OR (For linux), run the cy-run.sh file provided. Assuming you're in root dir.
+  * OR, run the cy-run.sh file provided. Assuming you're in root dir.
     ```bash
     $ ls
     cypress            cy-run.sh     package.json       README.md
@@ -112,6 +112,8 @@
       ![Alt text](slack.png)
 
 
+### Future ToDO
+- [] Containerized GitHub Actions execution
 
 ### List of known issues
 * `cy.visit()` - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See [Github issue](https://github.com/cypress-io/cypress/issues/2938).
