@@ -1,0 +1,32 @@
+{
+  "author": "Sohail Shaukat",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:record": "cypress run --record",
+    "cy:chrome": "npx cypress run --browser chrome",
+    "cy:firefox": "npx cypress run --browser firefox",
+    "cy:chrome:record": "npx cypress run --browser chrome --record",
+    "cy:firefox:record": "npx cypress run --browser firefox --record",
+    "cy:chrome:headed": "npx cypress run --browser chrome --headed",
+    "cy:firefox:headed": "npx cypress run --browser firefox --headed",
+    "cy:chrome:headed:record": "npx cypress run --browser chrome --record --headed",
+    "cy:firefox:headed:record": "npx cypress run --browser firefox --record --headed",
+    "cy:spec:product": "npx cypress run --spec 'cypress/plotly/tests/product.spec.js'",
+    "cy:spec:default": "npx cypress run --spec 'cypress/plotly/tests/default.spec.js'"
+  },
+  "dependencies": {
+    "cypress": "^13.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0"
+  }
+}
