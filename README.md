@@ -123,8 +123,5 @@ $ npm run cy:chrome
       ![Alt text](slack.png)
 
 
-### Future ToDO
-- [] Containerized GitHub Actions execution
-
 ### List of known issues
 * `cy.visit()` - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See [Github issue](https://github.com/cypress-io/cypress/issues/2938).
