@@ -6,7 +6,7 @@
     - Mobile
       - iPhoneX (viewport) : No known issues ✅
   - Gecko Family
-    - Firefox : 1 Known issue ❌
+    - Firefox : 1 Known issue ❌ (See below).
 
 
 ### How do I get set up? ###
