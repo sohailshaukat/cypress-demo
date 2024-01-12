@@ -2,18 +2,18 @@
   "author": "Sohail Shaukat",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --record false",
     "cy:record": "cypress run --record",
-    "cy:chrome": "npx cypress run --browser chrome",
-    "cy:firefox": "npx cypress run --browser firefox",
+    "cy:chrome": "npx cypress run --browser chrome --record false",
+    "cy:firefox": "npx cypress run --browser firefox --record false",
     "cy:chrome:record": "npx cypress run --browser chrome --record",
     "cy:firefox:record": "npx cypress run --browser firefox --record",
-    "cy:chrome:headed": "npx cypress run --browser chrome --headed",
-    "cy:firefox:headed": "npx cypress run --browser firefox --headed",
+    "cy:chrome:headed": "npx cypress run --browser chrome --headed --record false",
+    "cy:firefox:headed": "npx cypress run --browser firefox --headed --record false",
     "cy:chrome:headed:record": "npx cypress run --browser chrome --record --headed",
     "cy:firefox:headed:record": "npx cypress run --browser firefox --record --headed",
-    "cy:spec:product": "npx cypress run --spec 'cypress/plotly/tests/product.spec.js'",
-    "cy:spec:default": "npx cypress run --spec 'cypress/plotly/tests/default.spec.js'"
+    "cy:spec:product": "npx cypress run --spec 'cypress/plotly/tests/product.spec.js' --record false",
+    "cy:spec:default": "npx cypress run --spec 'cypress/plotly/tests/default.spec.js' --record false"
   },
   "dependencies": {
     "cypress": "^13.6.2"

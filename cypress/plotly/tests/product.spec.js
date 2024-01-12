@@ -24,6 +24,7 @@ skipIf(Cypress.browser.family === 'firefox', describe)(
     it('User is able to click on “Product”, then “Smart Orchestration”, then scroll down to “Test Analytics” and see that green circle is around “Test Analytics”', () => {
       // In an ideal scenario, this test should be skipped with a BUG as the expected color for the cirle is 'GREEN', but actual color is 'NOT GREEN'.
       const color = env.accentColor1;
+
       // Since it wouldn't make sense to report a bug here, for the time being this test will verify the existing color instead of doing
       // const color = env.accentColor2;
       NavBar.navigateToSubItem('Product', 'Smart Orchestration');
