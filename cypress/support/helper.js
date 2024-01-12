@@ -11,6 +11,15 @@ function verifyClipboardContent(expectedContent) {
   });
 }
 
+/**
+ * Description
+ * @param {boolean} expression - Provide an expression that results to boolean
+ * @example
+ * skip
+ */
+const skipIf = (expression, block) => (expression ? block.skip : block);
+
 module.exports = {
   verifyClipboardContent,
+  skipIf,
 };

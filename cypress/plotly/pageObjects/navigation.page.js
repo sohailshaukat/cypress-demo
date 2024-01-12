@@ -40,6 +40,7 @@ class NavigationBar {
   navigateTo(navItem) {
     cy.get(this.header[navItem].locator)
       .should('contain.text', this.header[navItem].title)
+      .and('be.visible')
       .click();
   }
 

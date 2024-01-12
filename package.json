@@ -4,14 +4,16 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:record": "cypress run --record",
-    "cy:chrome" : "npx cypress run --browser chrome",
-    "cy:firefox" : "npx cypress run --browser firefox",
-    "cy:chrome:record" : "npx cypress run --browser chrome --record",
-    "cy:firefox:record" : "npx cypress run --browser firefox --record",
-    "cy:chrome:headed" : "npx cypress run --browser chrome --headed",
-    "cy:firefox:headed" : "npx cypress run --browser firefox --headed",
-    "cy:chrome:headed:record" : "npx cypress run --browser chrome --record --headed",
-    "cy:firefox:headed:record" : "npx cypress run --browser firefox --record --headed"
+    "cy:chrome": "npx cypress run --browser chrome",
+    "cy:firefox": "npx cypress run --browser firefox",
+    "cy:chrome:record": "npx cypress run --browser chrome --record",
+    "cy:firefox:record": "npx cypress run --browser firefox --record",
+    "cy:chrome:headed": "npx cypress run --browser chrome --headed",
+    "cy:firefox:headed": "npx cypress run --browser firefox --headed",
+    "cy:chrome:headed:record": "npx cypress run --browser chrome --record --headed",
+    "cy:firefox:headed:record": "npx cypress run --browser firefox --record --headed",
+    "cy:spec:product": "npx cypress run --spec 'cypress/plotly/tests/product.spec.js'",
+    "cy:spec:default": "npx cypress run --spec 'cypress/plotly/tests/default.spec.js'"
   },
   "dependencies": {
     "cypress": "^13.6.2"

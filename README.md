@@ -13,7 +13,7 @@
   * Step 1:
     * Run `npm install` from the root folder
   * Step 2:
-    * Run plotly tests: (Note: The default viewport is 1920x1080) 
+    * Run plotly tests: (Note: The default viewport is 1920x1080)
       * HEADLESS
         * On Electron browser: `npm run cy:run`
         * On Chrome: `npm run cy:chrome`
@@ -30,11 +30,13 @@
             *`npm run cy:chrome:headed:record`
     * Note: For executions with Cypress Dashboard Record enabled, export the CYPRESS_RECORD_KEY as environment variable instead of passing it in package.json.
       - For Linux Systems: `export CYPRESS_RECORD_KEY=<KEY>`
-
+    * To run specific suites/spec files: `npm run cy:spec:$specFileName` 
+      - For E.g. To execute tests from 'cypress/plotly/tests/*product*.spec.js' use `npm run cy:spec:product`
 
 ### Contribution guidelines ###
 * Writing tests
   * Every test must be self contained, meaning it can be run on its own (excluding setups / teardowns). Test should NEVER rely on data or steps from another test.
+  * Add `/// <reference types="cypress" />` to the top of file for cypress intellisense.
   * Test must pass 90% of the time in order to be commited; that is if the test is run 10 times in a row it must pass at least 9 times.
   * Only skip test-cases when a bug is reported and remediation is in process. If a test is no longer valid, it should be decomissioned.
   * Any additional dependencies to the project must be vetted by the automation team before being committed.
@@ -70,3 +72,7 @@
 - Linter / Code Formatter
   - ESLint - Linter
   - Prettier - Code Formatter
+
+
+#### List of known issues
+* cy.visit() - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local.
