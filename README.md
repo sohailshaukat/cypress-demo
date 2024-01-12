@@ -64,7 +64,7 @@
   * All variables, methods, functions MUST be camelCase
   * All Global Variables and DB methods MUST be UPPERCASE (WITH SNAKE_CASE)
   * All cypress aliases MUST be snake_case
-  * For consistency it is recommended to follow filename1.page.js for page object files. Similarly filename2.spec.js for test spec files.
+  * For consistency it is recommended to follow `filename1.page.js` for page object files. Similarly `filename2.spec.js` for test spec files.
 
 
 ## Bonus Section
