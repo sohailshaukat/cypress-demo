@@ -1,4 +1,13 @@
 # cypress-demo
+- Support:
+  - Chromium Family:
+    - Electron Brower : No known issues ✅
+    - Chrome : No known issues ✅
+    - Mobile
+      - iPhoneX (viewport) : No known issues ✅
+  - Gecko Family
+    - Firefox : 1 Known issue ❌
+
 
 ### How do I get set up? ###
 * Configuration
