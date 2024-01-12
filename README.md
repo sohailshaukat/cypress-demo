@@ -29,14 +29,14 @@
         * On Firefox: `npm run cy:firefox`
         * With Cypress Dashboard ()
           * add `:record` to the above scripts. For e.g.,
-            *`npm run cy:firefox:record`
+            * `npm run cy:firefox:record`
       * HEADED
         * On Electron browser: `npm run cy:run:headed`
         * On Chrome: `npm run cy:chrome:headed`
         * On Firefox: `npm run cy:firefox:headed`
         * With Cypress Dashboard ()
           * add `:record` to the above scripts. For e.g.,
-            *`npm run cy:chrome:headed:record`
+            * `npm run cy:chrome:headed:record`
     * Note: For executions with Cypress Dashboard Record enabled, export the CYPRESS_RECORD_KEY as environment variable instead of passing it in package.json.
       - For Linux Systems: `export CYPRESS_RECORD_KEY=<KEY>`
     * To run specific suites/spec files: `npm run cy:spec:$specFileName` 
@@ -86,5 +86,5 @@
 
 
 
-#### List of known issues
+### List of known issues
 * cy.visit() - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See Github [issue](https://github.com/cypress-io/cypress/issues/2938).
