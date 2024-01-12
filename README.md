@@ -1,5 +1,5 @@
 # cypress-demo
-- Support:
+### Support:
   - Chromium Family:
     - Electron Brower : No known issues ✅
     - Chrome : No known issues ✅
@@ -42,7 +42,7 @@
     * To run specific suites/spec files: `npm run cy:spec:$specFileName` 
       - For E.g. To execute tests from 'cypress/plotly/tests/*product*.spec.js' use `npm run cy:spec:product`
 
-### Contribution guidelines ###
+## Contribution guidelines 
 * Writing tests
   * Every test must be self contained, meaning it can be run on its own (excluding setups / teardowns). Test should NEVER rely on data or steps from another test.
   * Add `/// <reference types="cypress" />` to the top of file for cypress intellisense.
@@ -82,9 +82,9 @@
 - Slack Integration
   - Notifies of execution results that are sent to Cypress Dashboard (all mentioned in above point).
   - The goal is to have 6 zeroes lined up, as we have total of 6 CI/CD runners.
-    - ![Alt text](slack.png)
+      ![Alt text](slack.png)
 
 
 
 ### List of known issues
-* cy.visit() - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See Github [issue](https://github.com/cypress-io/cypress/issues/2938).
+* `cy.visit()` - Intermittently fails for current version of Firefox, hence firefox execution is restricted to default.spec.js on local. See [Github issue](https://github.com/cypress-io/cypress/issues/2938).
