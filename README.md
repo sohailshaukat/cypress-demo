@@ -2,7 +2,7 @@
 [View on Eraser![](https://app.eraser.io/workspace/wRqRz45FbRQCF87VL5Kv/preview)](https://app.eraser.io/workspace/wRqRz45FbRQCF87VL5Kv)
 ### Support:
   - Chromium Family:
-    - Electron Brower : No known issues ✅
+    - Electron Browser : No known issues ✅
     - Chrome : No known issues ✅
     - Mobile
       - iPhoneX (viewport) : No known issues ✅
