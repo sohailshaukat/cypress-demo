@@ -47,7 +47,8 @@
   * Every test must be self contained, meaning it can be run on its own (excluding setups / teardowns). Test should NEVER rely on data or steps from another test.
   * Add `/// <reference types="cypress" />` to the top of file for cypress intellisense.
   * Test must pass 90% of the time in order to be commited; that is if the test is run 10 times in a row it must pass at least 9 times.
-  * Only skip test-cases when a bug is reported and remediation is in process. If a test is no longer valid, it should be decomissioned.
+  * Only skip test-cases when a bug is reported and remediation is in process and attach Bug info.
+  * If a test is no longer valid, it should be decomissioned. 
   * Any additional dependencies to the project must be vetted by the automation team before being committed.
  * Use Page Object Model
  * Use Data Driven model for environment specific data.
