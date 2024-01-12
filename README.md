@@ -6,7 +6,7 @@
     - Mobile
       - iPhoneX (viewport) : No known issues ✅
   - Gecko Family
-    - Firefox : 1 Known issue ❌ (See [below](#List of known issues) ).
+    - Firefox : 1 Known issue ❌ (See below).
 
 
 ### How do I get set up? ###
@@ -97,6 +97,7 @@
 - Linter / Code Formatter
   - ESLint - Linter
   - Prettier - Code Formatter
+- Docker Containerized Headless Execution
 - Github Actions Integration
   - Runs test on Firefox, Chrome, Electron (default browser).
   - Git Secrets/Credentials Check
