@@ -1,5 +1,15 @@
 # cypress-demo
 [View on Eraser![](https://app.eraser.io/workspace/wRqRz45FbRQCF87VL5Kv/preview)](https://app.eraser.io/workspace/wRqRz45FbRQCF87VL5Kv)
+
+## TL;DR
+* To download and run testcases
+```bash
+$ git clone https://www.github.com/sohailshaukat/cypress-demo.git
+$ cd ./cypress-demo
+$ npm install
+$ npm run cy:chrome
+```
+
 ### Support:
   - Chromium Family:
     - Electron Browser : No known issues ✅
