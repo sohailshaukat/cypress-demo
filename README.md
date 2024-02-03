@@ -24,7 +24,7 @@ $ npm run cy:chrome
 * Configuration
   - Install Dependencies (see dependencies section below)
   - Via the terminal navigate to the root folder and run "npm install"
-  - Each seperate front end project is represented in it's own folder under the root cypress folder e.g. `.../cypress/plotly/`, it can also have it's own cypress configuration files (e.g. cypress.json).
+  - Each seperate front end project is represented in it's own folder under the root cypress folder e.g. `.../cypress/projectA/`, it can also have it's own cypress configuration files (e.g. cypress.json).
 
 * Dependencies
     * Node.js v21.5.0 [LINK](https://nodejs.org/en/)
@@ -33,7 +33,7 @@ $ npm run cy:chrome
   * Step 1:
     * Run `npm install` from the root folder
   * Step 2:
-    * Run plotly tests: (Note: The default viewport is 1920x1080)
+    * Run projectA tests: (Note: The default viewport is 1920x1080)
       * HEADLESS
         * On Electron browser: `npm run cy:run`
         * On Chrome: `npm run cy:chrome`
@@ -51,7 +51,7 @@ $ npm run cy:chrome
     * Note: For executions with Cypress Dashboard Record enabled, export the CYPRESS_RECORD_KEY as environment variable instead of passing it in package.json.
       - For Linux Systems: `export CYPRESS_RECORD_KEY=<KEY>`
     * To run specific suites/spec files: `npm run cy:spec:$specFileName` 
-      - For E.g. To execute tests from 'cypress/plotly/tests/*product*.spec.js' use `npm run cy:spec:product`
+      - For E.g. To execute tests from 'cypress/projectA/tests/*product*.spec.js' use `npm run cy:spec:product`
 
 ### How to run tests in docker (FOR LINUX)
 * Assuming you have docker installed
