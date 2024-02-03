@@ -16,6 +16,15 @@ $ npm run cy:chrome
 4. User is able to click on “Product” and then “visual review”
 5. User is able to click on “Product”, then “Smart Orchestration”, then scroll down to “Test Analytics” and see that the green circle is around “Test Analytics”
 
+##### Testcases to add
+1. Field Input
+2. Form Input
+3. Response Interception
+4. API Test
+5. Form Validation
+6. Pagination Validation
+7. Report Validation
+
 
 ### Support:
   - Chromium Family:
