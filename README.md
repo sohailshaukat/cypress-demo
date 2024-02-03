@@ -9,6 +9,13 @@ $ cd ./cypress-demo
 $ npm install
 $ npm run cy:chrome
 ```
+### Testcases covered
+1. Users are able to visit the website and able to scroll down to “Loved by OSS, trusted by Enterprise” and see the weekly downloads number.
+2. User is able to click on Company and then on “About Cypress”
+3. User is able to click on “Install” and then on “npm install cypress” and make sure the copied text is “npm install cypress --save-dev”
+4. User is able to click on “Product” and then “visual review”
+5. User is able to click on “Product”, then “Smart Orchestration”, then scroll down to “Test Analytics” and see that the green circle is around “Test Analytics”
+
 
 ### Support:
   - Chromium Family:
