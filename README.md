@@ -25,6 +25,11 @@ $ npm run cy:chrome
 6. Pagination Validation
 7. Report Validation
 
+### Bonus featurs
+1. MySQL Testcases
+2. PGSQL Testcases
+3. API Testcases using Jest and Supertest. (Lol, only thumbasses use MS Excel and cy.request())
+
 
 ### Support:
   - Chromium Family:
